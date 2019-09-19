@@ -63,5 +63,12 @@ public class FanSpeed {
 
     }
 
+    public String toString() {
+        if (on) {
+            return "A " + radius + " inch " + color + " fan at high speed of " + speed;
+        } else {
+            return "A " + radius + " inch " + color + " fan; fan is off";
+        }
+    }
     
 }
