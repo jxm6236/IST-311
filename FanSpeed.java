@@ -27,4 +27,41 @@ public class FanSpeed {
         // TODO code application logic here
     }
     
+    public int getSpeed() {
+        return speed;
+    }
+
+    public boolean isOn() {
+        return on;
+    }
+
+    public double getRadius() {
+        return radius;
+    }
+
+    public String getColor() {
+        return color;
+    }
+
+    public void setSpeed(int newSpeed) {
+        speed = newSpeed;
+    }
+
+    public void setOn(boolean newOn) {
+        on = newOn;
+    }
+
+    public void setRadius(double newRadius) {
+        radius = newRadius;
+    }
+
+    public void setColor(String newColor) {
+        color = newColor;
+    }
+
+    public FanSpeed() {
+
+    }
+
+    
 }
