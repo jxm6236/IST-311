@@ -25,6 +25,18 @@ public class FanSpeed {
 
     public static void main(String[] args) {
         // TODO code application logic here
+        FanSpeed fan1 = new FanSpeed();
+        fan1.speed = fan1.FAST;
+        fan1.radius = 10;
+        fan1.color = "yellow";
+        fan1.on = true;
+        System.out.println(fan1.toString());
+        FanSpeed fan2 = new FanSpeed();
+        fan2.speed = fan2.MEDIUM;
+        fan2.radius = 5;
+        fan2.color = "blue";
+        fan2.on = false;
+        System.out.println(fan2.toString());
     }
     
     public int getSpeed() {
