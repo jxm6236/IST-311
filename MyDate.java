@@ -1,8 +1,10 @@
 /*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
+/***************************************
+* Filename: MyDate.java
+* Short description: This class displays two dates
+* @author James McGettigan
+* @version  9/30/2019
+***************************************/
 package mydate;
 
 /**
@@ -20,38 +22,48 @@ public class MyDate {
         this.month = month;
         this.day = day;  
     }
+    
+    public MyDate() {
+        year = 1970;
+        month = 0;
+        day = 1;
+        
+
+    }
 
     public int getYear() {
         return year;
-    }
-
-    public void setYear(int year) {
-        this.year = year;
     }
 
     public int getMonth() {
         return month;
     }
 
-    public void setMonth(int month) {
-        this.month = month;
-    }
 
     public int getDay() {
         return day;
     }
 
-    public void setDay(int day) {
-        this.day = day;
+    
+    public MyDate(long elapsedTime) {
+        
     }
     
+    public void setDate(long elapsedTime) {
+        
+    }
     
-
     /**
      * @param args the command line arguments
      */
     public static void main(String[] args) {
-        // TODO code application logic here
+        MyDate d1 = new MyDate();
+        MyDate d2 = new MyDate(34355555133101L);
+        
+        System.out.println("Date 1: yyyy/mm/dd" + d1.getYear() + d1.getMonth() + 
+                d1.getDay());
+        System.out.println("Date 2: yyyy/mm/dd" + "1970" + "January" + 
+                "1");
     }
     
 }
